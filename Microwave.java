@@ -6,8 +6,8 @@ public class Microwave{
     private static final double pizza = 0.75;
     private static final double sub = 1;
     private static final double soup = 1.75;
-    private static foodMap<String, Double> foodfoodMap = new HashfoodMap<String, Double>();
-    private static foodMap<String, Double> timefoodMap = new HashfoodMap<String, Double>();
+    private static foodMap<String, Double> foodMap = new HashMap<String, Double>();
+    private static timeMap<String, Double> timeMap = new HashMap<String, Double>();
     
 
     // Intro Variables:
@@ -28,7 +28,7 @@ public class Microwave{
         System.out.println("How many do you want?    (1, 2, 3) \n"); itemCount = userInput.nextInt();
         
 
-        cooktime = foodMap.get(item); System.out.println(cooktime);
+        cooktime = foodMap.get(item) * timeMap; System.out.println(cooktime);
         
         
         
