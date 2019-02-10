@@ -1,10 +1,15 @@
 {
     "configurations": [
         {
-            "type": "java",
-            "name": "CodeLens (Launch) - Microwave",
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
             "request": "launch",
-            "mainClass": "Microwave"
-        }
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/bin/Debug/ICS4U-Unit-04/<Program.dll>",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "internalConsole"
+        },
     ]
 }
